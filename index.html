@@ -9,11 +9,8 @@
     </header>
     <p>Click the <strong>Green</strong> Button.</p>
     <p>Do <strong>NOT</strong>click the <strong>Big Red</strong> Button.</p>
-    
-<label for="myCheck">I will not check the <strong>Big Red Button</strong>.</label> 
-<input type="checkbox" id="myCheck" onclick="myFunction()">
-  
-    <script id=dododo style="display:none" type="text/javascript">
+      
+    <script style="display:none" type="text/javascript">
     var clicks = 0;
     function hello() {
         clicks += 1;
@@ -25,19 +22,7 @@
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuCMCXkqCLA2nSkC32yG3WAhWMtM2pw_lHPA&s" alt="buttonpng" border="0" />
     </button>
     <p> <a id="clicks" style="display:none">0</a></p>
-
-<script>
-function myFunction() {
-  var checkBox = document.getElementById("myCheck");
-  var text = document.getElementById("dododo");
-  if (checkBox.checked == true){
-    dododo.style.display = "block";
-  } else {
-     dododo.style.display = "none";
-  }
-}
-</script>
-
+    
 </body>
 </html>
 
