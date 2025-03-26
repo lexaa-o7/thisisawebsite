@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Countr Clickr</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
 }
 </style>
-  </head>
-  <body>
-    <header>
-      <h1>Click Click Click</h1>
-    </header>
-    <p>Click the <strong>Green</strong> Button.</p>
-    <p>Do <strong>NOT</strong>click the <strong>Big Red</strong> Button.</p>
-      
+</head>
+<body>
+
+<h2>Countr Cooki Clickr</h2>
+<p>Click The Cookie</p>
+
+<div class="container">
     <script type="text/javascript">
     var clicks = 0;
     function hello() {
@@ -30,7 +53,7 @@ img {
       <img src="https://pngimg.com/d/cookie_PNG13656.png" alt="buttonpng" style="width:50%;"/>
     </button>
     <p> <a id="clicks" >0</a></p>
-    
+</div>
+
 </body>
 </html>
-
