@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>This is not a webpage</title>
+    <title>Countr Clickr</title>
   </head>
   <body>
     <header>
-      <h1>Do Not Click The Big Red Button</h1>
+      <h1>Click Click Click</h1>
     </header>
-    <p>Do not click the <strong> Big Red Button</strong>.</p>
-    <p>Will you click the <strong>Big Red Button</strong>?</p>
+    <p>Click the <strong>Green</strong> Button.</p>
+    <p>Do <strong>NOT</strong>click the <strong>Big Red</strong> Button.</p>
     
 <label for="myCheck">I will not check the <strong>Big Red Button</strong>.</label> 
 <input type="checkbox" id="myCheck" onclick="myFunction()">
   
-    <script id="text" style="display:none" type="text/javascript">
+    <script id=dododo style="display:none" type="text/javascript">
     var clicks = 0;
     function hello() {
         clicks += 1;
@@ -29,11 +29,11 @@
 <script>
 function myFunction() {
   var checkBox = document.getElementById("myCheck");
-  var text = document.getElementById("text");
+  var text = document.getElementById("dododo");
   if (checkBox.checked == true){
-    text.style.display = "block";
+    dododo.style.display = "block";
   } else {
-     text.style.display = "none";
+     dododo.style.display = "none";
   }
 }
 </script>
