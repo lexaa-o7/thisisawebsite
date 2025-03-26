@@ -7,11 +7,13 @@
     <header>
       <h1>Do Not Click The Big Red Button</h1>
     </header>
+    
     <p>This is <strong>not</strong> supposed to be clicked.</p>
     <p>Do not click the <strong> Big Red Button</strong>.</p>
     <p>Will you click the <strong>Big Red Button</strong>?</p>
-  <input type="checkbox" id="noiwont" name="noiwont" value="no">
-  <label for="noiwont"> I will not press the <strong>Big Red Button</strong>.</label><br>
+    
+<label for="myCheck">I will not check the <strong>Big Red Button</strong>.</label> 
+<input type="checkbox" id="myCheck" onclick="myFunction()">
     
     <script type="text/javascript">
     var clicks = 0;
@@ -28,17 +30,12 @@
 
 <script>
 function myFunction() {
-  var checkBox = document.getElementById("noiwont");
-  var button = document.getElementById("buttonnn");
-  var text = document.getElementById("clicks");
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
   if (checkBox.checked == true){
-    noiwont.style.display = "block";
-    butonnn.style.display = "block";
-    clicks.style.display = "block";
+    text.style.display = "block";
   } else {
-    noiwont.style.display = "none";
-    butonnn.style.display = "none";
-    clicks.style.display = "none";
+     text.style.display = "none";
   }
 }
 </script>
