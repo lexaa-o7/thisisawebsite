@@ -5,11 +5,11 @@
   </head>
   <body>
     <header>
-      <h1>This is not a heading.</h1>
+      <h1>Do Not Click The Big Red Button</h1>
     </header>
-    <p>This is <strong>not</strong> a sentence.</p>
-    <p>And neither is <strong>this</strong>.</p>
-    <p>This is not a question where the answer is "What?"</p>
+    <p>This is <strong>not</strong> supposed to be clicked.</p>
+    <p>Do not click the <strong> Big Red Button</strong>.</p>
+    <p>Will you click the <strong>Big Red Button</strong>?</p>
     <form>
   <label for="ans1">Answer:</label><br>
   <input type="text" id="ans1" ans="ans1" value=""><br>
@@ -24,8 +24,10 @@
         document.getElementById("clicks").innerHTML = clicks;
     };
     </script>
-    <button type="button" onclick="hello()">Click me</button>
-    <p>Clicks: <a id="clicks">0</a></p>
+    <button type="button" onclick="hello()">
+      <img src="https://i.ibb.co/CW5Wvry/buttonpng.png" alt="buttonpng" border="0" />
+    </button>
+    <p> <a id="clicks">0</a></p>
 
 </body>
 </html>
