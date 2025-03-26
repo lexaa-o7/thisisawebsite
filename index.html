@@ -12,19 +12,31 @@
     <p>Will you click the <strong>Big Red Button</strong>?</p>
   <input type="checkbox" id="noiwont" name="noiwont" value="no">
   <label for="noiwont"> I will not press the <strong>Big Red Button</strong>.</label><br>
+    
     <script type="text/javascript">
-
     var clicks = 0;
     function hello() {
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
     };
     </script>
-    <button type="button" onclick="hello()">
+    
+    <button id=buttonnn type="button"style="display:none" onclick="hello()">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuCMCXkqCLA2nSkC32yG3WAhWMtM2pw_lHPA&s" alt="buttonpng" border="0" />
     </button>
-    <p> <a id="clicks">0</a></p>
+    <p> <a id="clicks" style="display:none">0</a></p>
 
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("noiwont");
+  var button = document.getElementById("buttonnn");
+  var text = document.getElementById("clicks");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
 </script>
 
 </body>
