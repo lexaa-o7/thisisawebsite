@@ -13,8 +13,7 @@
   <input type="checkbox" id="noiwont" name="noiwont" value="no">
   <label for="noiwont"> I will not press the <strong>Big Red Button</strong>.</label><br>
 
-
-<body>
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
     <script type="text/javascript">
 
     var clicks = 0;
@@ -26,7 +25,20 @@
     <button type="button" onclick="hello()">
       <img src="https://i.ibb.co/CW5Wvry/buttonpng.png" alt="buttonpng" border="0" />
     </button>
-    <p> <a id="clicks">0</a></p>
+    <p> <a id="clicks" style="display:none">0</a></p>
+
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
