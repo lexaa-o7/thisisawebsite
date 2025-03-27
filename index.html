@@ -32,8 +32,8 @@
       }
 
 .dark-mode {
-  background-image: url('https://d3awvtnmmsvyot.cloudfront.net/api/file/3GKsoaTXQOyCT9WYLZxv/convert?fit=max&w=1450&quality=60&cache=true&rotate=exif&compress=true');
-    .button:img {url('https://cdn.shopify.com/s/files/1/1131/1600/files/feed_your_soul_cocoa_loco_no_packaging.png')}
+  background-image: img src="assets/dbg";
+    document.getElementById('button').src="https://cdn.shopify.com/s/files/1/1131/1600/files/feed_your_soul_cocoa_loco_no_packaging.png");
   color: white;
 }
 
@@ -57,8 +57,11 @@
          <img src="https://pngimg.com/d/cookie_PNG13656.png" alt="buttonpng" style="width:30%;" border="0"/>
     </button>
 </div>
-<button onclick="tripchoc()">Toggle dark mode</button>
-
+<form action="/action_page.php">
+ <input type="checkbox" id="dma" name="dja==ma" value="dma" onclick="tripchoc()">
+  <label for="dma">Triple Chocolate Mode?</label><br>
+</form>
+    
 <script>
 function tripchoc() {
    var element = document.body;
