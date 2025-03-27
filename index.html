@@ -30,6 +30,13 @@
  html {
           cursor: url("https://static.wikia.nocookie.net/cookieclicker/images/f/f6/CursorIconTransparent.png"), auto;
       }
+
+.dark-mode {
+  background-image: url('https://d3awvtnmmsvyot.cloudfront.net/api/file/3GKsoaTXQOyCT9WYLZxv/convert?fit=max&w=1450&quality=60&cache=true&rotate=exif&compress=true');
+    .button:img {url('https://cdn.shopify.com/s/files/1/1131/1600/files/feed_your_soul_cocoa_loco_no_packaging.png')}
+  color: white;
+}
+
 </style>
 
 </head>
@@ -50,6 +57,14 @@
          <img src="https://pngimg.com/d/cookie_PNG13656.png" alt="buttonpng" style="width:30%;" border="0"/>
     </button>
 </div>
+<button onclick="tripchoc()">Toggle dark mode</button>
+
+<script>
+function tripchoc() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
 </body>
 </html>
