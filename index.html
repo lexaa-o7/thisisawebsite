@@ -8,53 +8,7 @@
     body {
   background-image: url('https://static.vecteezy.com/system/resources/previews/050/395/080/non_2x/circular-arrangement-of-chocolate-chip-cookies-sweet-snack-copy-space-pink-background-photo.JPG');
 }
-    #table{
-  height:300px;
-  width:900px;
-  background:red;
-}
-
-#ball {
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  background-color: white;
-  border-radius:50px;
-  display:none;
-  z-index:11;
-}
-
 </style>
-<script>
-    {document.getElementById('table').addEventListener("click",animation);
-
-function animation(event){
-    var ball = document.getElementById("ball");
-    //clone element or create another one (you should set a class in you css)
-    var elem = ball.cloneNode(true);
-  document.getElementById("table").appendChild(elem);
-
-    elem.style.display ='block';
-//    document.getElementById("ball").disabled = true;
-    var x = event.clientX;
-    var y = event.clientY;
- 
-    var id = setInterval(frame, 2);
-    
-    function frame() {
-        if (x == 900) {
-            clearInterval(id);
-        } 
-        else
-        {
-            x++;
-            elem.style.top = y + 'px';
-            elem.style.left = x + 'px'; 
-        }
-    }
-}
-    }
-</script>
 
 </head>
 <body style="background-color:white;">
@@ -74,8 +28,6 @@ function animation(event){
          <img src="https://pngimg.com/d/cookie_PNG13656.png" alt="buttonpng" style="width:50%;" border="0"/>
     </button>
 </div>
-<div id="table">
-    <div id="ball"></div>
-</div>
+
 </body>
 </html>
