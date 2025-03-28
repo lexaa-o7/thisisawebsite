@@ -31,9 +31,8 @@
           cursor: url("https://static.wikia.nocookie.net/cookieclicker/images/f/f6/CursorIconTransparent.png"), auto;
       }
 
-.tripchocm {
-  background-image: img src="https://d3awvtnmmsvyot.cloudfront.net/api/file/3GKsoaTXQOyCT9WYLZxv/convert?fit=max&w=1450&quality=60&cache=true&rotate=exif&compress=true";
-    document.getElementById('button').src="https://cdn.shopify.com/s/files/1/1131/1600/files/feed_your_soul_cocoa_loco_no_packaging.png");
+.dark-mode {
+  background-image: url('https://d3awvtnmmsvyot.cloudfront.net/api/file/3GKsoaTXQOyCT9WYLZxv/convert?fit=max&w=1450&quality=60&cache=true&rotate=exif&compress=true');
   color: white;
 }
 
@@ -57,14 +56,15 @@
          <img src="https://pngimg.com/d/cookie_PNG13656.png" alt="buttonpng" style="width:30%;" border="0"/>
     </button>
 </div>
- <button type="checkbox" id="dma" name="dja==ma" value="dma" onclick="tripchoc()">TripChocMode?</button> 
-    
+ <button type="checkbox" id="dma" name="dja==ma" value="dma" onclick="myFunction()">TripChocMode?</button> 
+
 <script>
-function tripchoc() {
+function myFunction() {
    var element = document.body;
-   element.classList.toggle("tripchocm");
+   element.classList.toggle("dark-mode");
 }
 </script>
+
 
 </body>
 </html>
