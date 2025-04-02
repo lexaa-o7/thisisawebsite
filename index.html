@@ -30,7 +30,12 @@
  html {
           cursor: url("https://static.wikia.nocookie.net/cookieclicker/images/f/f6/CursorIconTransparent.png"), auto;
       }
-
+    
+.dark-mode {
+  background-image: url('https://i.ibb.co/tTRYHZMf/dbg.png');
+  color: white;
+}
+    
 </style>
 
 </head>
@@ -52,7 +57,14 @@
     </button>
 </div>
 
+<button onclick="myFunction()">Toggle dark mode</button>
 
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
 </body>
 </html>
